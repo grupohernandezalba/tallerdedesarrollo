@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: rgba(129, 5, 11, 0.577);
+    text-align: center;
+    color: antiquewhite;
+    padding: 30px;
+}
+nav{
+    float: left;
+    width: 30%;
+    height: 500px;
+    background-color: rgb(229, 147, 127);
+}
+article{
+    float: left;
+    width: 40%;
+    background-color: rgb(241, 204, 159);
+    height: 500px;
+}
+#fotoCiudad{
+    float: left;
+    background-color: rgba(220, 137, 64, 0.575);
+    width: 30%;
+    height: 500px;
+    height: 500px;
+
+}
+footer{
+    clear: both;
+    background-color: rgba(81, 2, 11, 0.89);
+    padding: 30px;
+    text-align: center;
+    color: antiquewhite;
+}
+h2,p{
+    padding: 50;
+    color: rgb(59, 36, 5);
+}

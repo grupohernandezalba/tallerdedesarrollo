@@ -1,0 +1,44 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #22577a;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+nav{
+    float: left; /*Sirve para juntar los elementos al mismo nivel*/
+    width: 30%;
+    height: 500px;
+    background-color: #38a3a5;
+}
+
+article{
+    float: left; /*Sirve para juntar los elementos al mismo nivel*/
+    width: 40%;
+    background-color: #57cc99;
+    height: 500px;
+}
+
+#fotoCiudad{
+    float: left;
+    background-color: #80ed99;
+    width: 30%;
+    height: 500px;
+}
+
+footer{
+    clear: both;
+    background-color: #c7f9cc;
+    padding: 30px;
+    text-align: center;
+    color: black;
+    text-emphasis: bold;
+}
+
+h2, p{
+    padding: 30px;
+}

@@ -1,0 +1,42 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #353535;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+nav{
+    float: left;
+    width: 30%;
+    height: 500px;
+    background-color:#d9d9d9 ;
+}
+article{
+    float: left;
+    width: 40%;
+    background-color: #3c6e71;
+    height: 500px;
+}
+
+#fotoCiudad{
+    float: left;
+    background-color: #284b63;
+    width: 30%;
+    height: 500px;
+}
+
+footer{
+    clear: both;
+    background-color: #748cab;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+h2, p{
+    padding:30px;
+}

@@ -1,0 +1,40 @@
+body{
+    font-family: 'Prompt', sans-serif;
+}
+header{
+    background-color: #5B7DB1;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+nav{
+    float: left;
+    width: 30%;
+    height: 500px;
+    background-color: #EBD8C3;
+}
+article{
+    float: left;
+    width: 40%;
+    background-color: #F3E9DD;
+    height: 500px;
+}
+#fotoCiudad{
+    float: left;
+    background-color: #1A132F;
+    width: 30%;
+    height: 500px;
+}
+footer{
+    clear: both;
+    background-color: #DAB88B;
+    padding: 30px;
+    text-align: center;
+}
+h2,p{
+    padding: 30px;
+    font-family: 'Cormorant', serif;
+}
+#pruebaCiudad img{
+    padding-top: 20px;
+}

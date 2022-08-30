@@ -1,0 +1,48 @@
+ body {
+    font-family: 'Roboto', sans-serif;
+ }
+
+ header {
+    background-color: #FF0000;
+    text-align: center;
+    color: white;
+    padding: 30px;
+ }
+
+ nav {
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    float: left;
+    width: 30%;
+    height: 500px;
+    background-color: #e9c46a;
+    font-size: 60px;
+ }
+
+ nav li {
+    text-decoration: none;
+ }
+
+ article {
+    float: left;
+    width: 40%;
+    background-color: #efefef;
+    height: 500px;
+ }
+
+ #fotoCiudad {
+    float: left;
+    background-color: #f4a261;
+    width: 30%;
+    height: 500px;
+ }
+
+ footer {
+    clear:both;
+    background-color: #2a9d8f;
+    padding: 30px;
+    text-align: center;
+    color: white;
+ }
+ h2, p {
+    padding: 30px;
+ }

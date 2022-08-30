@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+
+    <h1>Formulario:</h1>
+
+    <form action="enviar.html" method="get">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" value="Juan"><br>
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" value="Pérez"><br><br>
+        <input type="submit" value="Enviar">
+    </form> 
+
+    <hr>
+
+    <form name="forma2" action="enviar2.php" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" value="Juan"><br>
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" value="Pérez"><br><br>
+        <input type="submit" value="Enviar">
+    </form> 
+
+    <hr>
+
+    <form action="forma3" autocomplete="off" novalidate>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" required id="nombre" name="nombre" value="" placeholder=""> <br>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" required name="correo" id="correo"><br>
+        <label for="edad">Edad:</label>
+        <input type="number" required step="any" name="edad" id="edad"><br>
+
+        <label for="lenguaje">Selecciona tu lenguaje favorito</label>
+        <input type="radio" name="lenguaje" value="JavaScript"> JavaScript
+        <input type="radio" name="lenguaje" value="Python"> Python
+
+        <p>¿Qué países has visitado?</p>
+        <input type="checkbox" id="pais1" name="pais" value="EU">
+        <label for="pais1"> Estados Unidos</label><br>
+
+        <input type="checkbox" id="pais2" name="pais" value="CA">
+        <label for="pais2"> Canadá</label><br>
+
+        <input type="checkbox" id="pais3" name="pais" value="FR">
+        <label for="pais3"> Francia</label><br>
+
+        <fieldset>
+            <legend>Autos:</legend>
+
+        <p>Selecciona una marca de autos:</p>
+
+        <select id="autos" name="autos">
+            <option value="chevrolet">Chevrolet</option>
+            <option value="vw">VW</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select> <br>
+
+        </fieldset>
+
+
+        <p>Ingresa algún comentario:</p>
+        <textarea name="mensaje" rows="10" cols="30" style="width:100%; height:200px;"></textarea><br>
+
+        <p>Selecciona tu navegador favorito</p>
+        <input list="navegadores">
+        <datalist id="navegadores">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+    <hr>
+    <form name="forma4" action="">
+        <label for="username">Usuario:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="pwd">Contraseña:</label><br>
+        <input type="password" id="pwd" name="pwd">
+        <br>
+        <label for="favcolor">Color favorito:</label>
+        <input type="color" id="favcolor" name="favcolor">
+        <br>
+        <label for="nac">Fecha de nacimiento:</label>
+        <input type="date" id="nac" name="nac">
+
+        <br>
+        <label for="viaje">Horario de partida:</label>
+        <input type="datetime-local" id="viaje" name="viaje">
+
+        <br>
+        <label for="archivo">Sube tu foto:</label>
+        <input type="file" id="archivo" name="archivo">
+
+        <br>
+        <input type="hidden" id="identificador" name="identificador" value="1234">
+
+        <br>
+        <label for="cantidad">Cantidad (entre 1 y 5):</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" max="5">
+
+
+        <br>
+        <label for="vol">Volumen (entre 0 and 100):</label>
+        <input type="range" id="vol" name="vol" min="0" max="100">
+
+        <br>
+        <label for="celular">Teléfono:</label>
+        <input type="tel" id="celular" name="celular" pattern="[0-9]{3} [0-9]{3}-[0-9]{4}" placeholder="477 s123-4567">
+
+
+        <br>
+        <label for="hora">Seleccione una hora:</label>
+        <input type="time" id="hora" name="hora">
+
+        <br>
+        <label for="pagina">Agrega una URL:</label>
+        <input type="url" id="pagina" name="pagina">
+
+        <br>
+        <label for="semana">Selecciona una semana:</label>
+        <input type="week" id="semana" name="semana">
+
+
+        <!-- readonly , disabled maxlength="4" multiple autofocus -->
+
+
+        <input type="image" src="https://www.w3schools.com/html/img_submit.gif" alt="Submit" width="48" height="48">
+
+        <input type="submit" value="Enviar"><br>
+        <input type="reset">
+    </form>
+      
+    
+</body>
+</html>

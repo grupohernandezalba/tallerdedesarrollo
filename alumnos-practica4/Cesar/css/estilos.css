@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: #1B65A7;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+nav{
+    float: left;
+    width: 30%;
+    height: 500px;
+    background-color: #f2f4f5;
+}
+article{
+    float: left;
+    width: 40%;
+    height: 500px;
+
+}
+#fotoCiudad{
+float: left;
+background-color: #f2f4f5;
+width: 30%;
+height: 500px;
+
+}
+footer{
+    background-color: #ffffff;
+    clear: both;
+    background-color: #1B65A7;
+    padding: 30px;
+    text-align: center;
+    color: #ffffff;
+}

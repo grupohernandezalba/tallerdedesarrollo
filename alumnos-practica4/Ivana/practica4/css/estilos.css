@@ -1,0 +1,42 @@
+body {
+    font-family: 'Aboreto', cursive;
+}
+
+header {
+    background-color: #6b9080;
+    text-align: center;
+    color: azure;
+    padding: 30px;
+}
+
+nav{
+    float: left;
+    width: 30%;
+    height: 500px;
+    background-color: #a4c3b2;
+}
+
+article{
+    float: left;
+    width: 40%;
+    background-color: #cce3de;
+    height: 500px;
+}
+
+#fotoCiudad{
+    float: left;
+    background-color:#eaf4f4;
+    width: 30%;
+    height: 500px;
+}
+
+footer{
+    background-color: #f6fff8;
+    padding: 30px;
+    text-align: center;
+    color: black;
+}
+
+h2, p {
+    padding: 30px;
+}
