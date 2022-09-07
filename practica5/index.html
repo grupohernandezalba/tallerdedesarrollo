@@ -8,68 +8,49 @@
 </head>
 <body>
 
-    <h1>Formulario:</h1>
-
     <form action="enviar.html" method="get">
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre" value="Juan"><br>
-        <label for="apellido">Apellido:</label><br>
-        <input type="text" id="apellido" name="apellido" value="Pérez"><br><br>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre">
+        <br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido">
+        <br>
         <input type="submit" value="Enviar">
-    </form> 
+    </form>
 
     <hr>
 
-    <form name="forma2" action="enviar2.php" method="post">
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre" value="Juan"><br>
-        <label for="apellido">Apellido:</label><br>
-        <input type="text" id="apellido" name="apellido" value="Pérez"><br><br>
-        <input type="submit" value="Enviar">
-    </form> 
-
-    <hr>
-
-    <form action="forma3" autocomplete="off" novalidate>
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" required id="nombre" name="nombre" value="" placeholder=""> <br>
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" required name="correo" id="correo"><br>
-        <label for="edad">Edad:</label>
-        <input type="number" required step="any" name="edad" id="edad"><br>
-
-        <label for="lenguaje">Selecciona tu lenguaje favorito</label>
-        <input type="radio" name="lenguaje" value="JavaScript"> JavaScript
-        <input type="radio" name="lenguaje" value="Python"> Python
-
-        <p>¿Qué países has visitado?</p>
-        <input type="checkbox" id="pais1" name="pais" value="EU">
-        <label for="pais1"> Estados Unidos</label><br>
-
-        <input type="checkbox" id="pais2" name="pais" value="CA">
-        <label for="pais2"> Canadá</label><br>
-
-        <input type="checkbox" id="pais3" name="pais" value="FR">
-        <label for="pais3"> Francia</label><br>
-
+    <form name="forma2" action="">
         <fieldset>
-            <legend>Autos:</legend>
+        <label for="nombre">Nombre:</label>
+        <input type="text" required name="nombre2" id="nombre2" placeholder="Ingresa tu nombre">
+        <br>
+        <label for="correo">Correo:</label>
+        <input type="email" name="correo" id="correo">
+        <br>
+        <label for="edad">Edad:</label>
+        <input type="number" step="any" name="edad" id="edad">
+        <br>
+        <label for="lenguaje">Selecciona un lenguaje:</label>
+        <input type="radio" name="lenguaje" id="js"> Javascript
+        <input type="radio" name="lenguaje" id="py"> Python
+        <input type="radio" name="lenguaje" id="c"> C
 
-        <p>Selecciona una marca de autos:</p>
+        <br>
+        <label for="paises">¿Qué países has visitado?</label>
+        <input type="checkbox" name="paises" id="EU"> Estados Unidos
+        <input type="checkbox" name="paises" id="CA"> Canadá
 
-        <select id="autos" name="autos">
-            <option value="chevrolet">Chevrolet</option>
-            <option value="vw">VW</option>
-            <option value="fiat">Fiat</option>
-            <option value="audi">Audi</option>
-        </select> <br>
+        <label for="mensaje">Ingresa un comentario:</label>
+        <textarea style="width: 100%; height: 50px;" name="mensaje"></textarea>
 
-        </fieldset>
-
-
-        <p>Ingresa algún comentario:</p>
-        <textarea name="mensaje" rows="10" cols="30" style="width:100%; height:200px;"></textarea><br>
-
+        <br>
+        <label for="autos">Selecciona un auto:</label>
+        <select name="autos" id="autos">
+            <option value="chevrolet">chevrolet</option>
+            <option value="vw">vw</option>
+        </select>
+        
         <p>Selecciona tu navegador favorito</p>
         <input list="navegadores">
         <datalist id="navegadores">
@@ -80,16 +61,21 @@
           <option value="Safari">
         </datalist>
 
+
         <input type="submit" value="Enviar">
 
+        </fieldset>
     </form>
 
+
     <hr>
-    <form name="forma4" action="">
+    <form action="">
         <label for="username">Usuario:</label><br>
         <input type="text" id="username" name="username"><br>
         <label for="pwd">Contraseña:</label><br>
         <input type="password" id="pwd" name="pwd">
+        <br>
+
         <br>
         <label for="favcolor">Color favorito:</label>
         <input type="color" id="favcolor" name="favcolor">
@@ -135,15 +121,9 @@
         <input type="week" id="semana" name="semana">
 
 
-        <!-- readonly , disabled maxlength="4" multiple autofocus -->
-
-
-        <input type="image" src="https://www.w3schools.com/html/img_submit.gif" alt="Submit" width="48" height="48">
-
-        <input type="submit" value="Enviar"><br>
-        <input type="reset">
+        
+        <input type="submit" value="Enviar">
     </form>
-      
-    
+
 </body>
 </html>
