@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones</title>
+
+    <style>
+
+    body {
+        animation: colores 5s infinite alternate linear;
+    }
+
+    @keyframes colores{
+        0%{
+            background: #e48bf0;   
+        }
+        25%{
+            background: #37f18b;
+        }
+        50%{
+            background: #31b0fa;
+        }
+        75%{
+            background: #ffd97d;
+        }
+        100%{
+            background: #ff9b85;
+
+        }
+    }
+
+    .cuadroBlanco {
+        background: white;
+        position: absolute;
+        animation: mueveCuadro 1s infinite;
+    }
+
+    #cuadroBlanco1 {
+        width: 100px;
+        height: 100px;
+        left: 50px;
+    }
+
+    #cuadroBlanco2 {
+        width: 100px;
+        height: 100px;
+        left: 200px;
+    }
+
+    @keyframes mueveCuadro {
+        from {top: 0px;}
+        to {top: 200px;}
+    }
+
+    #cuadroRojo {
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: absolute;
+        left: 350px;
+        animation: moverRojo 10s infinite;
+    }
+    
+    @keyframes moverRojo {
+        0%   {top: 0px;}
+        25%  {top: 200px;}
+        75%  {top: 50px}
+        100% {top: 100px;}
+    }
+
+    #cuadroMultiColor {
+        width: 100px;
+        height: 100px;
+        left: 500px;
+        background: red;
+        position: relative;
+        animation: moverMultiColor 1s infinite;
+    }
+
+    @keyframes moverMultiColor {
+        0%   {top: 0px; left: 500px; background: red;}
+        25%  {top: 0px; left: 600px; background: blue;}
+        50%  {top: 100px; left: 600px; background: yellow;}
+        75%  {top: 100px; left: 500px; background: green;}
+        100% {top: 0px; left: 500px; background: red;}
+    }
+
+    #circulo {
+        width: 100px;
+        height: 100px;
+        left: 800px;
+        background: purple;
+        position: absolute;
+        animation: crece 5s infinite;
+        border-radius: 50%;
+    }
+
+    @keyframes crece {
+        0%   {top: 0px; width: 100px; height: 100px;}
+        100% {top: 200px; width: 300px; height: 300px;}
+    }
+
+    h1 {
+        margin-top: 900px;
+        text-align: center;
+    }
+
+    .cuadroAnimado {
+        border: 10px solid white;
+        background-color: black;
+        width: 300px;
+        height: 300px;
+    }
+
+    .gradiente {
+        background-image: linear-gradient(to right, red , yellow, green, brown);
+        background-image: linear-gradient(to left bottom, red , yellow, green, brown);
+        background-image: linear-gradient(45deg, red , yellow, green, brown);
+    }
+
+    #cuadroSombra {
+        width: 200px;
+        height: 200px;
+        background-image: url('https://images.unsplash.com/photo-1494783367193-149034c05e8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+        background-size: cover;
+        -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+        box-shadow: 5px 5px 15px 5px #000000;
+    }
+
+    h3 {
+        text-shadow: 7px 3px 9px #CE5937;
+    }
+
+
+    </style>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <div id="cuadroBlanco1" class="cuadroBlanco"></div>
+    <div id="cuadroBlanco2" class="cuadroBlanco"></div>
+    <div id="cuadroRojo"></div>
+    <div id="cuadroMultiColor"></div>
+    <div id="circulo"></div>
+    <!-- https://animate.style/ -->
+
+    <h1 class="animate__animated animate__bounce">Título animado</h1>
+
+    <h2 class="animate__animated animate__tada">Este es un texto animado</h2>
+
+    <div data-aos="fade-right" class="cuadroAnimado gradiente"></div>
+
+    <!-- https://gradientify.com/gradient-generator  -->
+
+    <!-- https://gradientify.com/gradient-generator     -->
+
+    <div id="cuadroSombra"></div>
+
+
+    <h3>Texto con sombra</h3>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

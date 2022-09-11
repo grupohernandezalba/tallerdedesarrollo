@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+#descripcion {margin-left: 4px;}
+
+#menu {
+  float: none;
+  width: auto;
+}
+
+#opciones {
+  margin: 0;
+  padding: 0;
+}
+
+.opcionmenu {
+  background: pink;
+  border: 1px solid black;
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  #menu {width: 200px; float: left;}
+  #main {margin-left: 216px;}
+}
+</style>
+</head>
+<body>
+
+<div class="contenido">
+  <div id="menu">
+    <ul id="opciones">
+      <li class="opcionmenu">Menu 1</li>
+      <li class="opcionmenu">Menu 2</li>
+      <li class="opcionmenu">Menu 3</li>
+      <li class="opcionmenu">Menu 4</li>
+      <li class="opcionmenu">Menu 5</li>
+    </ul>
+  </div>
+  
+  <div id="descripcion">
+    <h1>Título</h1>
+    <p>Lorem ipsum usando media queries.</p>
+  </div>
+</div>
+
+</body>
+</html>
