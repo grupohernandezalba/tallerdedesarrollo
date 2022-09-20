@@ -1,38 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Queries</title>
-
+    <title>11 Media Queries</title>
     <style>
         body {
-          background-color: orange;
-          color: black;
+            background-color: orange;
+            color:black
         }
-        
-        /* En pantallas de 992px de ancho o menos el fondo será azul */
-        @media screen and (max-width: 992px) {
-          body {
-            background-color: blue;
-            color: white;
-          }
-        }
-        
-        /* En pantallas de 600px de ancho o menos el fondo será olivo */
-        @media screen and (max-width: 600px) {
-          body {
-            background-color: olive;
-            color: white;
-          }
-        }
-    </style>
 
+        @media screen and (max-width: 992px) { 
+            body {
+                background-color: blue;
+                color:white;
+            }
+        }
+
+        @media screen and (max-width: 600px) { 
+            body {
+                background-color: olive;
+                color:white;
+            }
+        }
+
+    </style>
 </head>
 <body>
-
-    <h1>Cambie el tamaño de su ventana de navegador y verá el cambio de color</h1>
-    
+    <h1>Cambia el tamaño de la ventana del navegador y verás el cambio de color</h1>
 </body>
 </html>
