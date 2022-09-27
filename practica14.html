@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <title>Bootstrap</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -15,36 +16,28 @@
 <body>
 
     <div class="container bg-info">
-        <h1>Contenedor en BS</h1>
+        <h1>Contenedor de BS</h1>
         <p>Normal</p>
     </div>
 
-    <div class="container-fluid bg-primary text-white">
-        <h2>Contenedor fluido en BS</h2>
+    <div class="container-fluid bg-info">
+        <h1>Contenedor de BS</h1>
         <p>Normal</p>
     </div>
 
-    <div class="container bg-warning p-5 m-5 border">
-        <h2>Contenedor en BS</h2>
-        <p>Normal</p>
-    </div>
-
-    <div class="container-fluid mt-3">
-        <div class="row">
-            <div class="col-12 col-md-4 p-3 bg-primary text-white">.col-4</div>
-            <div class="col-12 col-md-8 p-3 bg-dark text-white">.col-8</div>
+    <div class="container-fluid bg-dark p-3">
+        <div class="container bg-danger m-3">
+            <p class="text-white">Hola BS</p>
         </div>
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <h1 class="display-1 text-end">Display 1</h1>
-                <h1 class="display-2 text-center">Display 2</h1>
-                <h1 class="display-3 text-lowercase">Display 3</h1>
-                <h1 class="display-4 text-uppercase">Display 4</h1>
-                <h1 class="display-5 text-capitalize">Display 5</h1>
-                <h1 class="display-6">Display 6</h1>
+            <div class="col-12 col-md-4 bg-primary">
+                Esta es una columna 4 posiciones
+            </div>
+            <div class="col-12 col-md-8 bg-danger">
+                Esta es una columna 8 posiciones
             </div>
         </div>
     </div>
@@ -52,22 +45,21 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <p class="text-muted">Muted.</p>
-                <p class="text-primary">Important.</p>
-                <p class="text-success">Success.</p>
-                <p class="text-info">Information.</p>
-                <p class="text-warning">Warning.</p>
-                <p class="text-danger">Danger.</p>
-                <p class="text-secondary">Secondary.</p>
-                <p class="text-dark">Dark grey.</p>
-                <p class="text-body">Default body color (often black).</p>
-                <p class="text-light">Light grey.</p>
-                <p class="text-white">This text is white (on white background).</p>
+                <p class="text-muted">Muted</p>
+                <p class="text-primary">Primary</p>
+                <p class="text-success">Success</p>
+                <p class="text-info">Information</p>
+                <p class="text-warning">Warning</p>
+                <p class="text-danger">Danger</p>
+                <p class="text-secondary">Secondary</p>
+                <p class="text-dark">Dark grey</p>
+                <p class="text-light">Light</p>
+                <p class="violeta">White</p>
             </div>
         </div>
     </div>
 
-    <div class="container mt-3">
+    <div class="container">
         <div class="bg-primary p-3"></div>
         <div class="bg-success p-3"></div>
         <div class="bg-info p-3"></div>
@@ -75,8 +67,8 @@
         <div class="bg-danger p-3"></div>
         <div class="bg-secondary p-3"></div>
         <div class="bg-dark p-3"></div>
-        <div class="bg-light p-3"></div>
+        <div class="bg-pink p-3"></div>
     </div>
-
+    
 </body>
 </html>
