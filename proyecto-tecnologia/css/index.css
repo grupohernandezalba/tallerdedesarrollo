@@ -1,0 +1,22 @@
+h1 {
+    font-size: 2em;
+}
+
+#piedepagina {
+    background-color: #003566;
+}
+
+#piedepagina a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#piedepagina h3 {
+    color: #ffc300;
+    font-size: 1.2em;
+}
+
+.iconoredes {
+    font-size: 2em;
+    padding-right: 0.5em;
+}
