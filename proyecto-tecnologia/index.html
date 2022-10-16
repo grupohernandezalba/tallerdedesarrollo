@@ -81,7 +81,7 @@
         </div>
     </div>
 
-    <div class="container-fluid py-5 bg-light" id="quees">
+    <div class="container-fluid py-5 bg-light" id="quees" data-aos="fade-up">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -103,10 +103,10 @@
                     </lord-icon>
                 </div>
             </div>
-        <div>
+        </div>
     </div>
 
-    <div class="container-fluid my-5 py-5 bg-white" id="paquetes">
+    <div class="container-fluid my-5 py-5 bg-white" id="paquetes" data-aos="fade-up">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-4">
@@ -155,7 +155,7 @@
     </div>
     
 
-    <div class="container-fluid py-5 bg-light" id="contacto">
+    <div class="container-fluid py-5 bg-light" id="contacto" data-aos="fade-up">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -175,7 +175,12 @@
                         <div class="col-6 py-2"><input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre" required></div>
                         <div class="col-6 py-2"><input type="tel" name="telefono" id="telefono" class="form-control" placeholder="Tel&eacute;fono" step="any" required></div>
                         <div class="col-12 py-2"><input type="email" name="correo" id="correo" class="form-control" placeholder="Correo electr&oacute;nico" required></div>
-                        <div class="col-12 py-2"><textarea name="comentario" id="comentario" class="form-control" placeholder="Comentario" required></textarea> </div>
+                        <div class="col-12 py-2">
+                            <div class="form-floating mb-3">
+                                <textarea name="comentario" id="comentario" class="form-control" placeholder="Comentario" required></textarea> 
+                                <label for="comentario">Email address</label>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
@@ -192,7 +197,130 @@
         </div>
     </div>
 
-    <div class="container-fluid text-white p-5" id="piedepagina">
+
+    <div class="container-fluid p-0 m-0 bg-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center">CARACTERÍSTICAS DE LOS PAQUETES</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mt-5">
+                    <table class="table table-bordered table-striped table-hover text-center">
+                        <thead>
+                        <tr>
+                            <th>Paquete Negocio</th>
+                            <th>Paquete Empresa</th>
+                            <th>Paquete Corporativo</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>5 trabajadores</td>
+                            <td>Almacenamiento 5 Gigas</td>
+                            <td>5 Sucursales</td>
+                        </tr>
+                        <tr>
+                            <td>50 trabajadores</td>
+                            <td>Almacenamiento 50 Gigas</td>
+                            <td>50 Sucursales</td>
+                        </tr>
+                        <tr>
+                            <td>500 trabajadores</td>
+                            <td>Almacenamiento 500 Gigas</td>
+                            <td>500 Sucursales</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="alert alert-success">
+                        <strong>¿Oferta!</strong> al contratar en este mes obtienes un descuento del 50% en cualquier paquete.
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-12 col-md-4">
+                    <img src="imagenes/nomi-cloud-imagen3.jpeg" class="img-thumbnail w-100 shadow" alt="NomiCloud">
+                    <!-- <img src="imagenes/nomi-cloud-imagen3.jpeg" class="img-rounded w-100" alt="NomiCloud"> -->
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="imagenes/nomi-cloud-imagen3.jpeg" class="img-thumbnail w-100 opacity-25" alt="NomiCloud">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="imagenes/nomi-cloud-imagen3.jpeg" class="img-thumbnail w-100 opacity-50" alt="NomiCloud">
+                </div>
+                <div class="col-12 col-md-4">   
+                    <img src="imagenes/nomi-cloud-imagen3.jpeg" class="img-thumbnail w-100 border border-primary border-top-0" alt="NomiCloud">
+                    <!-- <img src="imagenes/nomi-cloud-imagen3.jpeg" class="img-rounded w-100" alt="NomiCloud"> -->
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="imagenes/nomi-cloud-imagen3.jpeg" class="img-thumbnail w-100" alt="NomiCloud">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="imagenes/nomi-cloud-imagen3.jpeg" class="img-thumbnail w-100" alt="NomiCloud">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Negocios
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Empresas
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Corporativos
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid text-white p-5" id="piedepagina" data-aos="fade-up">
         <footer>
                 <div class="row">
                     <div class="col-12 col-md-3" data-aos="zoom-in">
