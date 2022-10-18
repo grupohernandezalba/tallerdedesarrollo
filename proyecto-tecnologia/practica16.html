@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1 id="titulo">Hola Mundo</h1>
+    <p id="texto">Este es un párrafo en html</p>
+    <ul id="colores">
+        <li>Rojo</li>
+        <li>Verde</li>
+        <li>Azul</li>
+    </ul>
+
+    <script>
+        var titulo;
+        titulo = document.getElementById("titulo");
+        titulo.innerHTML = "Hola JS";
+
+        var texto;
+        texto = document.getElementById("texto");
+        texto.style.fontSize = "50px";
+
+        var colores;
+        colores = document.getElementById("colores");
+        //colores.style.display = "none";
+        colores.style.display = "block";
+
+        function cambiaColor() {
+            colores.style.color = "#ff0000";
+        }
+
+
+        cambiaColor();
+
+        document.write("Este es un número generado con JS: ");
+        document.write(50 + 60);
+
+        //window.alert("Esta es una alerta");
+
+        var cadena = "Hola consola de JS"
+        console.log("Solo para desarrolladores" + cadena);
+
+
+        //window.print();
+
+        let a, b, c;   
+        a = 5;        
+        b = 6;         
+        c = a + b;    
+
+        // a = 5; b = 6; c = a + b;
+        console.log(c);
+
+        let persona = "Hugo";
+        //let persona="Hugo";
+
+        var radio = 10;
+        const PI = 3.1416;
+
+        function calculaArea(){
+            let areatemporal = PI*radio*radio;
+            return areatemporal;
+        }
+
+        var area = calculaArea(radio);
+
+        console.log(area);
+
+        //JSBin
+
+        let numero = 10.50;
+        var numeroNuevo = 10;
+
+        let soyCadena = "jeje";
+        var soyCadenaNueva = 'jaja';
+
+        let $multi_plica = numero * numeroNuevo
+        console.log($multi_plica);
+
+        let sinValor;
+        console.log(sinValor);
+
+        var auto = "BMW";
+        var auto;
+        console.log(auto);
+
+        /*
+
+        // Qué es el  Let Hoisting
+        let auto = "BMW";
+        let auto;
+        console.log(auto);
+        */
+
+        let variableLocal = 10;
+
+        {
+            let variableLocal = 2;
+            console.log(variableLocal);
+        }
+
+        console.log(variableLocal);
+
+
+        const PI_ = 3.141592653589793;
+        //PI_ = 3.14;     
+
+
+        const autos = ["VW", "Chevrolet", "BMW"];
+        console.log(autos[1]);
+
+        autos.push("Audi");
+
+        console.log(autos);
+
+
+        const autoNuevo = {tipo:"Toyota Camry", modelo:"500", color:"blanco"};
+        autoNuevo.color = "rojo";
+        autoNuevo.propietario = "Juan Pérez";
+
+        console.log(autoNuevo);
+
+
+
+    </script>
+    
+</body>
+</html>
