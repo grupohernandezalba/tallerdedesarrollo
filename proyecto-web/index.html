@@ -22,7 +22,7 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-light" id="menu">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="imagenes/logo-nomicloud.webp" alt="Logo NomiCloud" width="150px">
@@ -33,16 +33,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                <a class="nav-link active" aria-current="page" href="#menu">INICIO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">¿QUÉ ES NOMICLOUD?</a>
+                <a class="nav-link" aria-current="page" href="#quees">¿QUÉ ES NOMICLOUD?</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">PAQUETES</a>
+                <a class="nav-link" aria-current="page" href="#paquetes">PAQUETES</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">CONTACTO</a>
+                <a class="nav-link" aria-current="page" href="#formacontacto">CONTACTO</a>
               </li>
             </ul>
           </div>
@@ -68,7 +68,7 @@
       </button>
     </div>
 
-	<div class="container-fluid py-5 bg-light">
+	<div class="container-fluid py-5 bg-light" id="quees">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 text-center">
@@ -92,7 +92,7 @@
 		</div>
 	</div>
 
-	<div class="container-fluid my-5 py-5 ">
+	<div class="container-fluid my-5 py-5" id="paquetes">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 text-center">
@@ -129,6 +129,64 @@
 						  <a href="#" class="btn btn-warning">Más información</a>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<form name="formacontacto" id="formacontacto"  action="">
+		<fieldset>
+			<div class="container-fluid py-5 bg-light">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="text-center">FORMA DE CONTACTO</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<p>Agradecemos el que nos envíe sus comentarios, preguntas y/o sugerencias. Por favor llene la siguiente forma con sus datos:</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-md-6 offset-md-3">
+							<div class="row">
+								<div class="col-6 py-2">
+									<input type="text" class="form-control" required name="nombre" id="nombre" placeholder="Ingresa tu nombre completo">
+								</div>
+								<div class="col-6 py-2">
+									<input type="tel" class="form-control" required name="telefono" id="telefono" placeholder="Teléfono">
+								</div>
+								<div class="col-12 py-2">
+									<input type="email" class="form-control" required name="correo" id="correo" placeholder="Correo">
+								</div>
+								<div class="col-12">
+									<div class="form-floating mb-3">
+										<textarea name="comentarios" class="form-control" id="comentarios"  placeholder="Comentarios" required></textarea>
+										<label for="comentarios">Comentarios</label>
+									</div>
+								</div>
+								<div class="col-12 py-2 text-center">
+									<input type="submit" value="Enviar" class="btn btn-primary">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</fieldset>
+	</form>
+
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="text-center">CARACTERISTICAS DE LOS PAQUETES</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					
 				</div>
 			</div>
 		</div>
