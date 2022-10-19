@@ -125,6 +125,94 @@
         console.log(autoNuevo);
 
 
+        var x1 = 4.5
+        console.log(typeof x1);
+
+        var y1 = 10
+        console.log(typeof y1);
+
+        var z1 = "Hola"
+        console.log(typeof z1);
+        
+        console.log( 3 > 10 );
+
+        console.log("Thor" < "Iron Man");
+
+        console.log("a" < "b");
+
+        console.log("de" < "bc");
+
+        console.log(true && false)
+        console.log(true && true)
+        console.log(false || true)
+        console.log(false || false)
+
+
+        console.log(true ? 1 : 2);
+
+        console.log(false ? 1 : 2);
+
+
+        console.log(8 * null)
+        // → 0
+        console.log("5" - 1)
+        // → 4
+        console.log("5" + 1)
+        // → 51
+        console.log("cinco" * 2)
+        // → NaN
+        console.log(false == 0)
+
+        //let numero1 = Number(prompt("Elige un numero"));
+        //console.log(numero1);
+
+
+        let valor = 0;
+        while (valor <= 12) {
+            console.log(valor);
+            valor = valor + 2;
+        }
+
+        console.log("---------------");
+
+        let resultado = 1;
+        let contador = 0;
+        while (contador < 10) {
+        resultado = resultado * 2;
+        console.log("ciclo:" + resultado);
+        contador = contador + 1;
+        }
+        console.log(resultado);
+
+
+        /*
+        let tuNombre;
+        do {
+        tuNombre = prompt("Quien eres?");
+        } while (!tuNombre);
+        console.log(tuNombre);
+        */
+
+        console.log("-------Ciclos For--------");
+        for (let numero = 0; numero <= 12; numero = numero + 2) {
+            console.log(numero);
+        }
+
+        console.log("-------Break--------");
+        for (let actual = 20; ; actual = actual + 1) {
+            if (actual % 7 == 0) {
+                console.log(actual);
+                break;
+            }
+        }
+
+        console.log("-------Cuenta--------");
+        var cuenta = 10;
+        cuenta = cuenta + 1;
+        console.log(cuenta);
+        cuenta += 1;
+        console.log(cuenta);
+
 
     </script>
     
