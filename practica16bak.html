@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1 id="titulo">Hola Mundo</h1>
+    <p id="texto">Este es un párrafo en html</p>
+    <ul id="colores">
+        <li>Rojo</li>
+        <li>Verde</li>
+        <li>Azul</li>
+    </ul>
+
+    <script>
+        var titulo;
+        titulo = document.getElementById("titulo");
+        titulo.innerHTML = "Hola JS";
+
+        var texto;
+        texto = document.getElementById("texto");
+        texto.style.fontSize = "50px";
+
+        var colores;
+        colores = document.getElementById("colores");
+        //colores.style.display = "none";
+        colores.style.display = "block";
+
+        function cambiaColor() {
+            colores.style.color = "#ff0000";
+        }
+
+
+        cambiaColor();
+
+        document.write("Este es un número generado con JS: ");
+        document.write(50 + 60);
+
+        //window.alert("Esta es una alerta");
+
+        var cadena = "Hola consola de JS"
+        console.log("Solo para desarrolladores" + cadena);
+
+
+        //window.print();
+
+        let a, b, c;   
+        a = 5;        
+        b = 6;         
+        c = a + b;    
+
+        // a = 5; b = 6; c = a + b;
+        console.log(c);
+
+        let persona = "Hugo";
+        //let persona="Hugo";
+
+        var radio = 10;
+        const PI = 3.1416;
+
+        function calculaArea(){
+            let areatemporal = PI*radio*radio;
+            return areatemporal;
+        }
+
+        var area = calculaArea(radio);
+
+        console.log(area);
+
+        //JSBin
+
+        let numero = 10.50;
+        var numeroNuevo = 10;
+
+        let soyCadena = "jeje";
+        var soyCadenaNueva = 'jaja';
+
+        let $multi_plica = numero * numeroNuevo
+        console.log($multi_plica);
+
+        let sinValor;
+        console.log(sinValor);
+
+        var auto = "BMW";
+        var auto;
+        console.log(auto);
+
+        /*
+
+        // Qué es el  Let Hoisting
+        let auto = "BMW";
+        let auto;
+        console.log(auto);
+        */
+
+        let variableLocal = 10;
+
+        {
+            let variableLocal = 2;
+            console.log(variableLocal);
+        }
+
+        console.log(variableLocal);
+
+
+        const PI_ = 3.141592653589793;
+        //PI_ = 3.14;     
+
+
+        const autos = ["VW", "Chevrolet", "BMW"];
+        console.log(autos[1]);
+
+        autos.push("Audi");
+
+        console.log(autos);
+
+
+        const autoNuevo = {tipo:"Toyota Camry", modelo:"500", color:"blanco"};
+        autoNuevo.color = "rojo";
+        autoNuevo.propietario = "Juan Pérez";
+
+        console.log(autoNuevo);
+
+
+        var x1 = 4.5
+        console.log(typeof x1);
+
+        var y1 = 10
+        console.log(typeof y1);
+
+        var z1 = "Hola"
+        console.log(typeof z1);
+        
+        console.log( 3 > 10 );
+
+        console.log("Thor" < "Iron Man");
+
+        console.log("a" < "b");
+
+        console.log("de" < "bc");
+
+        console.log(true && false)
+        console.log(true && true)
+        console.log(false || true)
+        console.log(false || false)
+
+
+        console.log(true ? 1 : 2);
+
+        console.log(false ? 1 : 2);
+
+
+        console.log(8 * null)
+        // → 0
+        console.log("5" - 1)
+        // → 4
+        console.log("5" + 1)
+        // → 51
+        console.log("cinco" * 2)
+        // → NaN
+        console.log(false == 0)
+
+        //let numero1 = Number(prompt("Elige un numero"));
+        //console.log(numero1);
+
+
+        let valor = 0;
+        while (valor <= 12) {
+            console.log(valor);
+            valor = valor + 2;
+        }
+
+        console.log("---------------");
+
+        let resultado = 1;
+        let contador = 0;
+        while (contador < 10) {
+        resultado = resultado * 2;
+        console.log("ciclo:" + resultado);
+        contador = contador + 1;
+        }
+        console.log(resultado);
+
+
+        /*
+        let tuNombre;
+        do {
+        tuNombre = prompt("Quien eres?");
+        } while (!tuNombre);
+        console.log(tuNombre);
+        */
+
+        console.log("-------Ciclos For--------");
+        for (let numero = 0; numero <= 12; numero = numero + 2) {
+            console.log(numero);
+        }
+
+        console.log("-------Break--------");
+        for (let actual = 20; ; actual = actual + 1) {
+            if (actual % 7 == 0) {
+                console.log(actual);
+                break;
+            }
+        }
+
+        console.log("-------Cuenta--------");
+        var cuenta = 10;
+        cuenta = cuenta + 1;
+        console.log(cuenta);
+        cuenta += 1;
+        console.log(cuenta);
+
+
+
+        let x1 = 5;
+        let y1 = 2;
+        let z1 = x1 % y1;
+
+
+        let x2 = 5;
+        x2++;
+        let z2 = x;
+
+        let x3 = 5;
+        x3--;
+        let z3 = x;
+
+
+        let x4 = 5;
+        let z4 = x4 ** 2;
+
+
+        let x5 = 5;
+        let z5 = Math.pow(x5,2);
+
+
+        let x6 = 100 + 50 * 3;
+
+        let x7 = 10;
+        x -= 5;
+
+        let x = 10;
+        x7 *= 5;
+
+        let x8 = 10;
+        x8 /= 5;
+
+        let x9;  // Now x is undefined
+        x9 = 5;  // Now x is a Number
+        x9 = "John"; // Now x is a String
+
+        let car = "";
+
+
+function myFunction(a, b) {
+    return a * b;  // Function returns the product of a and b
+}
+
+
+const person = {
+    firstName : "John",
+    lastName : "Doe",
+    id : 5566,
+    fullName : function() {
+         return this.firstName + " " + this.lastName;
+    }
+};
+
+
+
+
+    </script>
+    
+</body>
+</html>
