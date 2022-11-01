@@ -241,10 +241,19 @@
             id : 123,
             nombreCompleto: function() {
                 return this.nombre + " " + this.apellido;
-            }
+            } 
         }
 
         console.log(persona.nombreCompleto());
+
+        console.log(persona["apellido"]);
+
+
+        var personax = '{"nombre":"Juan", "edad":31, "ciudad":"León"}';
+        console.log(personax);
+        var objetoPersona = JSON.parse(personax);
+        console.log(objetoPersona.nombre);
+
 
     
 

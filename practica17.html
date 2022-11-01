@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 17 - Eventos</title>
+</head>
+<body>
+    
+    <button id="boton1" onclick="muestraHora()">¿Qué hora es?</button>
+    <p id="hora"></p>
+
+    <button id="boton2" onmouseover="muestraHora2()">¿Qué hora es?</button>
+    <p id="hora2"></p>
+
+    <script>
+
+        function muestraHora(){
+            let hora = document.getElementById('hora');          
+            hora.innerHTML = Date();
+        }
+
+        function muestraHora2(){
+            let hora = document.getElementById('hora2');          
+            hora.innerHTML = Date();
+        }
+
+    </script>
+</body>
+</html>
