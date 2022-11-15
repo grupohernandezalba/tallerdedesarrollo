@@ -3,17 +3,17 @@
     "name": "SimpleSPA",
     "icons": [
       {
-        "src": "/imagenes/icono1.svg",
+        "src": "imagenes/icono1.svg",
         "type": "image/svg+xml",
         "sizes": "512x512"
       },
       {
-        "src": "/imagenes/icono3.png",
+        "src": "imagenes/icono2.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "/imagenes/icono2.png",
+        "src": "imagenes/icono2.png",
         "type": "image/png",
         "sizes": "512x512"
       }
@@ -29,18 +29,18 @@
         "short_name": "SPA",
         "description": "Simple SPA",
         "url": "/",
-        "icons": [{ "src": "/imagenes/icono3.png", "sizes": "192x192" }]
+        "icons": [{ "src": "imagenes/icono2.png", "sizes": "192x192" }]
       }
     ],
     "description": "Simple SPA information",
     "screenshots": [
       {
-        "src": "/imagenes/imagen1.png",
+        "src": "imagenes/imagen1.png",
         "type": "imagenes/png",
         "sizes": "540x720"
       },
       {
-        "src": "/imagenes/imagen2.jpg",
+        "src": "imagenes/imagen2.jpg",
         "type": "imagenes/jpg",
         "sizes": "540x720"
       }
