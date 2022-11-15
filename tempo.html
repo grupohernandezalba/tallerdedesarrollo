@@ -8,25 +8,12 @@
 </head>
 <body>
 
-    <table border="1">
-        <tr>
-            <th>Product</th>
-            <th>Flavors</th>
-        </tr>
-        <tr>
-            <td rowspan="3">Milk</td>    
-            <td>Almond</td>        
-        </tr>
-        <tr>
-            <td>Mango</td>        
-        </tr>
-        <tr>
-            <td>Chocolate</td>        
-        </tr>
-        <tr>
-            <td colspan="2">Exclusive flavors</td>        
-        </tr>
-    </table>
-    
+    <form name="formulario" method="post" action="/send.php">
+        <!-- Nombre de usuario. Obligatorio, entre 5-40 carácteres
+           Sólo se permiten letras y números -->
+        <input type="text" name="nombre" placeholder="Su nombre de usuario"
+               required pattern="[A-Za-z0-9]{5,40}"
+               title="Letras y números. Tamaño mínimo: 5. Tamaño máximo: 40" />
+    </form>
 </body>
 </html>
