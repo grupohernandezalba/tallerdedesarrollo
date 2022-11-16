@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForEach</title>
+</head>
+<body>
+
+    <p id="lista1"></p>
+    <p id="lista2"></p>
+    <p id="lista3"></p>
+
+    <script>
+    let texto1 = "";
+    let texto2 = "";
+    let texto3 = "";
+    
+    const frutas = ["manzana", "naranja", "uva"];
+    const autos = ["bmw", "vw", "chevrolet"];
+    const navegadores = ["chrome", "safari", "edge"];
+    
+    frutas.forEach(myFunction);
+    
+    document.getElementById("lista1").innerHTML = texto1;
+     
+    function myFunction(item, index) {
+      texto1 += index + ": " + item + "<br>"; 
+    }
+
+    autos.forEach((item,index)=>{ 
+        texto2 += index + ": " + item + "<br>"; 
+    });
+
+    document.getElementById("lista2").innerHTML = texto2;
+
+
+    navegadores.forEach( item =>{ 
+        texto3 += item + "<br>"; 
+    });
+
+    document.getElementById("lista3").innerHTML = texto3;
+    </script>
+
+</body>
+</html>
