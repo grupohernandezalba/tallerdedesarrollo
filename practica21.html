@@ -4,31 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JSON to HTML</title>
+    <title>ForEach</title>
 </head>
 <body>
+
     <div id="paises"></div>
     <script>
-        
+
         var datos = [{
-            "country": "Mexico",
-            "id": 1
-        }, {
-            "country": "Panama",
-            "id": 2
-        }, {
-            "country": "Colombia",
-            "id": 3
+            "pais" : "México",
+            "id" : "1" 
+        },
+        {
+            "pais" : "Panamá",
+            "id" : "2" 
+        },
+        {
+            "pais" : "Colombia",
+            "id" : "3" 
         }];
 
-        var paises = document.getElementById("paises");  
+        var paises = document.getElementById('paises');
 
-        datos.forEach( registro => {
-            let nombre = document.createElement("p");
-            nombre.textContent = "País:" + registro.country + ", id:" + registro.id;
+        datos.forEach( registro =>{
+            let nombre = document.createElement('p');
+            nombre.textContent = "País" + registro.pais + " id: " + registro.id;
             paises.appendChild(nombre);
         });
 
+
+
     </script>
+
 </body>
 </html>
