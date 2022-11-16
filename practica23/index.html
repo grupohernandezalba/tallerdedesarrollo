@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAISES</title>
+</head>
+<body>
+    <div id="paises"></div>
+    <script>
+        var paises = document.getElementById("paises");  
+        fetch("paises.json")
+        .then( response => {
+            response.json().then( datos => {
+                datos.forEach( registro => {
+                    let nombre = document.createElement("p");
+                    nombre.textContent = "País:" + registro.CountryName + ", id:" + registro.CapitalName;
+                    paises.appendChild(nombre);
+                });
+            });
+        });
+
+        // https://countryflagsapi.com/
+    </script>
+</body>
+</html>
