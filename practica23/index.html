@@ -10,18 +10,28 @@
     <div id="paises"></div>
     <script>
         var paises = document.getElementById("paises");  
-        fetch("paises.json")
+        fetch("https://grupohernandezalba.com/paises.json")
         .then( response => {
             response.json().then( datos => {
                 datos.forEach( registro => {
                     let nombre = document.createElement("p");
                     nombre.textContent = "País:" + registro.CountryName + ", id:" + registro.CapitalName;
                     paises.appendChild(nombre);
+
+
+                    let imagen = document.createElement("img");
+                    imagen.setAttribute("src","https://countryflagsapi.com/png/" + registro.CountryName);
+                    paises.appendChild(imagen);
+
                 });
             });
         });
 
         // https://countryflagsapi.com/
+
+        // https://fakestoreapi.com/
+
+        
     </script>
 </body>
 </html>
