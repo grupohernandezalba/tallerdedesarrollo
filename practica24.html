@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24</title>
+</head>
+<body>
+    
+    <p id="elemento"></p>
+    <p id="lenguaje"></p>
+    <p id="browser"></p>
+    <p id="datos"></p>
+
+    <button onclick="window.history.back();">Regresar</button>
+    <button onclick="history.forward();">Adelante</button>
+    <button onclick="history.go(-2)">Regresa 2 páginas</button>
+
+    <p id="origen"></p>
+    <button onclick="location.href = 'https://apple.com';">Ir a Apple</button>
+
+    <button onclick="location.reload();">Recarga</button>
+
+    <p id="pantalla"></p>
+    <script>
+
+        //Case sensitive
+        var elemento, Elemento;
+        elemento = "Java";
+        Elemento = "Javascript";
+        document.getElementById("elemento").innerHTML = elemento;
+
+        //Objetos
+
+        //Object Navigator
+
+
+        let lenguaje = window.navigator.language;
+        document.getElementById("lenguaje").innerHTML = lenguaje;
+
+        let browser = navigator.appCodeName;
+        document.getElementById("browser").innerHTML = browser;
+
+
+        let datos = document.getElementById("datos");
+
+        datos.innerHTML =   
+        "<p>Browser Name: " + navigator.appName + "</p>" +
+        "<p>Browser Version: " + navigator.appVersion + "</p>" +
+        "<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>" +
+        "<p>Browser Online: " + navigator.onLine + "</p>" +
+        "<p>Platform: " + navigator.platform + "</p>" +
+        "<p>User-agent header: " + navigator.userAgent + "</p>";
+
+
+        // Object Window
+
+
+        window.console.error("Tienes un error");
+        console.info("Informativo");
+        console.warn("Aviso");
+        console.clear();
+
+        var empleados = ["Hugo", "Paco", "Luis"];
+        console.table(empleados);
+
+        console.log(history.length);
+
+
+        let origen = window.location.origin;
+        document.getElementById("origen").innerHTML = origen;
+
+        console.log(location.host);
+        console.log(location.hostname);
+        console.log(location.port);
+        console.log(location.protocol);
+        console.log(location.search);
+
+        //Screen
+
+
+        let pantalla = document.getElementById("pantalla");
+        
+        
+        pantalla.innerHTML = 
+        "Total width/height: " + screen.width + "*" + screen.height + "<br>" +
+        "Available width/height: " + screen.availWidth + "*" + screen.availHeight + "<br>" +
+        "Color depth: " + screen.colorDepth + "<br>" +
+        "Color resolution: " + screen.pixelDepth;
+
+
+        console.log(window.innerHeight);
+        console.log(window.innerWidth);
+
+        //window.open("https://apple.com");
+        //window.open("https://apple.com","ventana1","width=500,height=500");
+
+        //window.print();
+
+
+        //Objeto Math
+
+
+        console.log(Math.PI);
+        console.log(Math.round(4.4));
+        console.log(Math.ceil(7.2));
+        console.log(Math.floor(7.2));
+        console.log(Math.trunc(8.1));
+        console.log(Math.sign(-4));
+        console.log(Math.sign(0));
+        console.log(Math.sign(4));
+        console.log(Math.pow(8, 2));
+        console.log(Math.sqrt(64));
+        console.log(Math.abs(-4.7));
+        console.log(Math.min(0, 150, 30, 20, -8, -200));
+        console.log(Math.max(0, 150, 30, 20, -8, -200));
+        console.log(Math.random());
+        
+        
+
+
+ 
+    </script>
+</body>
+</html>
