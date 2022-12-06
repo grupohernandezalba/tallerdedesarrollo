@@ -158,6 +158,20 @@
     <div class="container-fluid py-5 bg-light" id="contacto" data-aos="fade-up">
         <div class="container">
             <div class="row">
+                <div class="col-12 text-center">
+                    <h2>PRODUCTOS DINAMICOS</h2>
+                </div>
+            </div>
+            <div class="row" id="productosdinamicos">
+            </div>
+        </div>
+    </div>
+        
+
+
+    <div class="container-fluid py-5 bg-light" id="contacto" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
                 <div class="col-12">
                     <h2 class="text-center">CONTACTO</h2>
                 </div>
@@ -378,6 +392,45 @@
 
     <script>
         AOS.init();
+    </script>
+
+    <script>
+        let productosdinamicos = document.getElementById("productosdinamicos"); 
+
+        fetch("datos/productos.json")
+        .then( response => {
+            response.json().then( datos => {
+                datos.forEach( registro => {
+
+                    let columna = document.createElement("div");
+                    columna.className = "col-12 col-md-4 p-4 text-center bg-white shadow";
+
+                    let nombre = document.createElement("h3");
+                    nombre.innerHTML = registro.nombre;
+
+                    let caracteristicas = document.createElement("h5");
+                    caracteristicas.className = "card-title text-secondary";
+                    caracteristicas.innerHTML = registro.caracteristicas;
+
+                    let imagen = document.createElement("img");
+                    imagen.className = "w-100";
+                    imagen.src = "imagenes/" + registro.imagen;
+
+                    let boton = document.createElement("button");
+                    boton.className = "btn btn-warning hvr-grow my-3";
+                    boton.innerHTML = "Más información";
+                    
+                    productosdinamicos.appendChild(columna);
+                    columna.appendChild(imagen);
+                    columna.appendChild(nombre);
+                    columna.appendChild(caracteristicas);
+                    columna.appendChild(boton);
+
+                });
+            });
+        });
+
+    </script>
     </script>
 
 </body>

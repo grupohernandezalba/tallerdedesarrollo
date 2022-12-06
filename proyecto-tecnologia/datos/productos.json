@@ -1,0 +1,17 @@
+[{
+	"nombre": "Paquete Negocio",
+	"caracteristicas": "Hasta 5 trabajadores",
+    "imagen": "paquete-nomicloud.png"
+}, {
+	"nombre": "Paquete Empresa",
+    "caracteristicas": "Hasta 50 trabajadores",
+    "imagen": "paquete-nomicloud.png"
+}, {
+	"nombre": "Paquete Corporativo",
+    "caracteristicas": "Hasta 500 trabajadores",
+    "imagen": "paquete-nomicloud.png"
+}, {
+	"nombre": "Paquete VIP",
+    "caracteristicas": "Hasta 1000 trabajadores",
+    "imagen": "paquete-nomicloud.png"
+}]
